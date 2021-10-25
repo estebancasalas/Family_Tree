@@ -6,14 +6,14 @@ namespace Library
 {
     public class Node
     {
-        private int number;
+        private Person person;
 
         private List<Node> children = new List<Node>();
 
-        public int Number {
+        public Person Person {
             get
             {
-                return this.number;
+                return this.person;
             }
         }
 
@@ -24,9 +24,10 @@ namespace Library
             }
         }
 
-        public Node(int number)
+        public Node(string name, string lastName, int age)
         {
-            this.number = number;
+            Person person = new Person(name,lastName,age);
+            this.person = person;
         }
 
         public void AddChildren(Node n)

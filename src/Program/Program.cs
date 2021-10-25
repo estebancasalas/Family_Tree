@@ -6,23 +6,18 @@ namespace Program
     class Program
     {
         static void Main(string[] args)
-        {
-            Node n1 = new Node(1);
-            Node n2 = new Node(2);
-            Node n3 = new Node(3);
-            Node n4 = new Node(4);
-            Node n5 = new Node(5);
-            Node n6 = new Node(6);
-            Node n7 = new Node(7);
+        {   
+            
+            Node n1 = new Node("manuel", "perez",20);
+            Node n2 = new Node("martin", "perez",50);
+            Node n3 = new Node("jose", "perez",62);
+            Node n4 = new Node("juan", "perez",48);
+            Node n5 = new Node("Ana", "Pereyra de Souza", 62);
+            Node n6 = new Node("Andres", "Casalas", 29);
+            Node n7 = new Node("Esteban", "Casalas", 21);
+            Node n8 = new Node("pedro", "perez", 15);
+            
 
-            n1.AddChildren(n2);
-            n1.AddChildren(n3);
-
-            n2.AddChildren(n4);
-            n2.AddChildren(n5);
-
-            n3.AddChildren(n6);
-            n3.AddChildren(n7);
 
             // visitar el árbol aquí
         }
