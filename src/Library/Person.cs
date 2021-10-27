@@ -3,13 +3,34 @@ namespace Library
     public class Person
     {
         private string name { get; set;}
-        private string lastName { get; set;}
         private int age { get; set;}
+        public string Name
+        {
+            get
+            {
+                return this.name;
+            }
+            set
+            {
+                this.name = value;
+            }
+        }
 
-        public Person(string name, string lastName, int age)
+        public int Age 
+        {
+            get
+            {
+                return this.age;
+            }
+            set
+            {
+                this.age = value;
+            }
+        }
+
+        public Person(string name, int age)
         {
             this.name = name;
-            this.lastName = lastName;
             this.age = age;
         }
     }

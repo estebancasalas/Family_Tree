@@ -2,15 +2,15 @@ namespace Library
 {
     public abstract class Visitor
     {
-        public int Age
+        public string Content
         {
             get
             {
-                return this.age;
+                return this.content;
             }
         }
 
-        protected int age {get;} = 0;
+        protected string content = "";
 
         public abstract void Visit(Node n);
     }

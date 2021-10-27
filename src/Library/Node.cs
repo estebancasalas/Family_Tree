@@ -24,15 +24,19 @@ namespace Library
             }
         }
 
-        public Node(string name, string lastName, int age)
+        public Node(string name, int age)
         {
-            Person person = new Person(name,lastName,age);
+            Person person = new Person(name,age);
             this.person = person;
         }
 
         public void AddChildren(Node n)
         {
             this.children.Add(n);
+        }
+        public void Accept(Visitor visitor)
+        {
+            visitor.Visit(this);
         }
         
     }
